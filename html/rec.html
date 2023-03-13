@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>movie_upload</title>
+</head>
+<body>
+  <form action="./../php/movie_upload.php" method="post" enctype="multipart/form-data">
+    <h2>動画撮影</h2>
+    <h4>ファイル選択ボタンをタップすると動画を撮影できます</h4>
+    <p><input type="file" name="upfile" id="upfile" accept="camera/*" capture="camera"/></p>
+    <tr>
+      <td align="right">
+        <hr>
+        <b><h2>演習種目</h2></b>
+      </td>
+      <td>
+        <h4>ベッドメーキング</h4>
+        <table class="table">
+          <input type="radio" name="Exercises_type" value="bed1" required>ボディメカニクスを活用したベッドメーキング<br>
+          <input type="radio" name="Exercises_type" value="bed2" required>臥症患者のベッドメーキング
+        </table>
+        <h4>滅菌確認</h4>
+        <table class="table">
+          <input type="radio" name="Exercises_type" value="Sterilization1" required>滅菌手袋の着脱編<br>
+          <input type="radio" name="Exercises_type" value="Sterilization2" required>滅菌状態の確認と取り扱い編<br>
+          <input type="radio" name="Exercises_type" value="Sterilization3" required>無菌操作・消毒綿球の作り方編
+        </table>
+        <h4>注射準備</h4>
+        <table class="table">
+          <input type="radio" name="Exercises_type" value="injection1" required>6R編<br>
+          <input type="radio" name="Exercises_type" value="injection2" required>注射準備編<br>
+          <input type="radio" name="Exercises_type" value="injection3" required>筋肉・皮下注射
+        </table>
+      </td>
+    </tr>
+    <hr>
+    <h4>演習項目を選択したら保存ボタンを押してください</h4>
+    <p><input type="submit" name="save" value="保存" /></p>
+  </form>
+</body>
+</html>

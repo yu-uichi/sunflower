@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- タイトル -->
+  <title>Register</title>
+
+  <!-- css読み込み -->
+  <link href="./../css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+
+
+</head>
+
+
+<body>
+  <div class="container">
+    <!--form部分-->
+      <form name="form" id="id_form" action="./../php/register_master.php" method="post">
+        <legend><h1>新規ユーザを一気に登録します</h1>
+        <h2>最初の学籍番号と最後の学籍番号を入力することで連番で登録されます。</h2></legend>
+
+        <div>
+          <label>最初の学籍番号</label>
+          <input type="text" name="first_student_number" class="form-control" placeholder="1670000" id="id_textBox1">
+        </div>
+        <br>
+        <div>
+          <label>最後の学籍番号</label>
+          <input type="text" name="last_student_number" class="form-control" placeholder="1670000" id="id_textBox2">
+          <p class="help-block">学籍番号は7桁で入力してください</p>
+        </div>
+
+        <button type="submit" value="Exec" class="btn btn-default">Exec</button>
+      </form>
+    <!--  -->
+
+  </div>
+</body>
+
+
+
+</html>

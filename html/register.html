@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- タイトル -->
+  <title>Register</title>
+
+  <!-- css読み込み -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+  <!-- css -->
+  <style>
+    body{
+      padding-top: 80px;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <div class="container">
+    <!--form部分-->
+      <form name="form2" id="id_form2" action="./php/register.php" method="post">
+        <legend><h1>新規ユーザ登録</h1></legend>
+
+        <div>
+          <label>学籍番号</label>
+          <input type="text" name="student_number" class="form-control" placeholder="1670000" id="id_textBox1">
+          <!-- ここは学校によって変える必要あり？ -->
+          <p class="help-block">学籍番号は7桁で入力してください</p>
+          <!--  -->
+        </div>
+
+        <!-- <div>
+          <label>メールアドレス(任意)</label>
+          <input type="text" name="mail" class="form-control" placeholder="" id="id_textBox2">
+          <p class="help-block">操作ミスなどで、間違った学籍番号などを登録してしまった際の連絡用です</p>
+        </div>
+
+        <div>
+          <label>学校名(任意)</label>
+          <input type="text" name="school_name" class="form-control" placeholder="" id="id_textBox2">
+          <p class="help-block">今後、他大学で使用する可能性があるため項目です</p>
+        </div> -->
+
+        <div>
+          <label>パスワード</label>
+          <input type="password" name="password" class="form-control" id="id_textBox3">
+          <p class="help-block">学籍番号とパスワードを入力したら，下のExecボタンを押してください</p>
+          <p class="help-block">注: パスワードは他のWebサイトで使用しているものと絶対に同じにしないでください。</p>
+        </div>
+
+        <button type="submit" value="Exec" class="btn btn-default">Exec</button>
+      </form>
+    <!--  -->
+
+  </div>
+</body>
+
+
+
+</html>
